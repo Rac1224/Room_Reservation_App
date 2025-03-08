@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74242EA7-9582-4F71-9366-9AB90557C7B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IOOP_ASSIGNMENT</RootNamespace>
+    <AssemblyName>IOOP ASSIGNMENT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DailyReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyReport.Designer.cs">
+      <DependentUpon>frmDailyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLibrarianChangesApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibrarianChangesApproval.Designer.cs">
+      <DependentUpon>frmLibrarianChangesApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLibrarianFunctionality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibrarianFunctionality.Designer.cs">
+      <DependentUpon>frmLibrarianFunctionality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLibrarianSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibrarianSearch.Designer.cs">
+      <DependentUpon>frmLibrarianSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonthlyReport.Designer.cs">
+      <DependentUpon>frmMonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentFunctionality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentFunctionality.Designer.cs">
+      <DependentUpon>frmStudentFunctionality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentNewReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentNewReservation.Designer.cs">
+      <DependentUpon>frmStudentNewReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentReservationChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentReservationChange.Designer.cs">
+      <DependentUpon>frmStudentReservationChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentReservationRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentReservationRecords.Designer.cs">
+      <DependentUpon>frmStudentReservationRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianChangeRequestApprovalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarianChangeRequestApprovalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianSearchDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarianSearchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MonthlyReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report.cs" />
+    <Compile Include="reservation.cs" />
+    <Compile Include="reservationSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reservationSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationSystemDataSet1.cs">
+      <DependentUpon>ReservationSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="users.cs" />
+    <EmbeddedResource Include="frmDailyReport.resx">
+      <DependentUpon>frmDailyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLibrarianChangesApproval.resx">
+      <DependentUpon>frmLibrarianChangesApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLibrarianFunctionality.resx">
+      <DependentUpon>frmLibrarianFunctionality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLibrarianSearch.resx">
+      <DependentUpon>frmLibrarianSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonthlyReport.resx">
+      <DependentUpon>frmMonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentFunctionality.resx">
+      <DependentUpon>frmStudentFunctionality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentNewReservation.resx">
+      <DependentUpon>frmStudentNewReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentReservationChange.resx">
+      <DependentUpon>frmStudentReservationChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentReservationRecords.resx">
+      <DependentUpon>frmStudentReservationRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DailyReportDataSet.xsc">
+      <DependentUpon>DailyReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DailyReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DailyReportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DailyReportDataSet.xss">
+      <DependentUpon>DailyReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarianChangeRequestApprovalDataSet.xsc">
+      <DependentUpon>LibrarianChangeRequestApprovalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarianChangeRequestApprovalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibrarianChangeRequestApprovalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibrarianChangeRequestApprovalDataSet.xss">
+      <DependentUpon>LibrarianChangeRequestApprovalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarianSearchDataSet.xsc">
+      <DependentUpon>LibrarianSearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibrarianSearchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibrarianSearchDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibrarianSearchDataSet.xss">
+      <DependentUpon>LibrarianSearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MonthlyReportDataSet.xsc">
+      <DependentUpon>MonthlyReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MonthlyReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MonthlyReportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MonthlyReportDataSet.xss">
+      <DependentUpon>MonthlyReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="reservationSystemDataSet.xsc">
+      <DependentUpon>reservationSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="reservationSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>reservationSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="reservationSystemDataSet.xss">
+      <DependentUpon>reservationSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationSystemDataSet1.xsc">
+      <DependentUpon>ReservationSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReservationSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReservationSystemDataSet1.xss">
+      <DependentUpon>ReservationSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReservationSystem.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReservationSystem_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ReservationSystem.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\rejected.png" />
+    <None Include="Resources\approved.png" />
+    <None Include="Resources\black background%28shallow%29.jpg" />
+    <None Include="Resources\black background1.jpg" />
+    <None Include="Resources\arrow%28y1%29.png" />
+    <None Include="Resources\room.png" />
+    <None Include="Resources\change1.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\change.png" />
+    <None Include="Resources\yellow box.png" />
+    <None Include="Resources\report%28y%29.png" />
+    <None Include="Resources\4341726.png" />
+    <None Include="Resources\loupe.png" />
+    <None Include="Resources\3277724.png" />
+    <None Include="Resources\LOGO%28p%29.png" />
+    <None Include="Resources\LOGO white %28shallow%291.png" />
+    <None Include="Resources\LOGO white %28shallow%29.png" />
+    <None Include="Resources\trans yellow.png" />
+    <None Include="Resources\yellow btn2.png" />
+    <None Include="Resources\yellow btn1.png" />
+    <None Include="Resources\yellow btn.png" />
+    <None Include="Resources\darek yellow.jpg" />
+    <None Include="Resources\black background.jpg" />
+    <None Include="Resources\booking%28w%29.png" />
+    <None Include="Resources\booking.png" />
+    <None Include="Resources\arrow.png" />
+    <None Include="Resources\yellow fradient.jpg" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\LOGO shallow2.png" />
+    <None Include="Resources\report2.png" />
+    <None Include="Resources\8863292.png" />
+    <None Include="Resources\LOGO white1.png" />
+    <None Include="Resources\arrow%28b%29.png" />
+    <None Include="Resources\report1.png" />
+    <None Include="Resources\8863291.png" />
+    <None Include="Resources\LOGO shallow1.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\886329.png" />
+    <None Include="Resources\LOGO shallow.png" />
+    <None Include="Resources\LOGO white.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\0a1271c8cdf01ea581fd541bc650faef.jpg" />
+    <None Include="Resources\arrow%28y%291.png" />
+    <None Include="Resources\arrow%28y%29.png" />
+    <None Include="Resources\secure-icon-png-4988.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\20fae4a3dfe347c4e99d8b29eb290df9.jpg" />
+    <None Include="Resources\LOGO.png" />
+    <None Include="Resources\librarian.png" />
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+</Project>
